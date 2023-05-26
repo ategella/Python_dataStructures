@@ -4,7 +4,7 @@ def push(n):
   if len(stack) == n:
     print("The stack is full")
   else:
-    element = input("Enter the element you want to push: ")
+    element = input("Enter the data you want to push: ")
     if element.isdigit():
       stack.append(int(element))
     else:
