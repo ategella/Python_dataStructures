@@ -1,0 +1,28 @@
+queue = []
+
+def enqueue():
+  n = input("Enter the element ")
+  if n.isdigit():
+    queue.append(int(n))
+  else:
+    queue.append(n)
+
+def deque():
+  if not queue:
+    print("The queue is empty!")
+  else:
+    a = queue.pop(0)
+    print(f"{a} is removed from the queue")
+
+while True:
+  choice = input("Enter option 1.Add 2.Remove 3.Show Queue 4. Quit. Your choice is: ")
+
+  if choice == "1":
+    enqueue()
+
+  if choice == "2":
+    deque()
+  if choice == "3":
+    print(queue)
+  if choice == "4":
+    break
